@@ -38,7 +38,7 @@ namespace ProgrammingBasics
 		{
 			Assert.Equal(expectedResult, IfElse.IsEven(number));
 		}
- 
+
 		[Theory]
 		[InlineData(7, true)]
 		[InlineData(0, false)]
@@ -72,6 +72,20 @@ namespace ProgrammingBasics
 		public void OddPotatoEightCarrotTest(int number, string expectedResult)
 		{
 			Assert.Equal(expectedResult, IfElse.OddPotatoEightCarrot(number));
+		}
+
+		[Theory]
+		[InlineData("Head", "INVALID!")]
+		[InlineData("Heads", "Tails")]
+		[InlineData("heads", "Tails")]
+		[InlineData("headS", "Tails")]
+		[InlineData("Tail", "INVALID!")]
+		[InlineData("Tails", "Heads")]
+		[InlineData("tails", "Heads")]
+		[InlineData("tailS", "Heads")]
+		public void FlipCoinTest(string coin, string expectedResult)
+		{
+			Assert.Equal(expectedResult, IfElse.FlipCoin(coin));
 		}
 	}
 }

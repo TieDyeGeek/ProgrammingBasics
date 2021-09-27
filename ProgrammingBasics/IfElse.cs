@@ -61,5 +61,16 @@
 		{
 			return null;
 		}
+
+		/// <summary>
+		/// return "Heads" if coin is "Tails"
+		/// return "Tails" if coin is "Heads"
+		/// otherwise return "INVALID!"
+		/// ignore casing
+		/// </summary>
+		public static string FlipCoin(string coin)
+		{
+			return "INVALID!";
+		}
 	}
 }

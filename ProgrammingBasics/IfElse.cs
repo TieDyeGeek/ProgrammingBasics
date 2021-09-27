@@ -1,7 +1,7 @@
 ﻿namespace ProgrammingBasics
 {
 	/// <summary>
-	/// Fill out these functions and make them pass their tests
+	/// Fill out these functions to make them pass all their tests
 	/// Try to use if/else statements first before simplifying (if simplifying is even needed)
 	/// </summary>
 	public static class IfElse
@@ -54,7 +54,7 @@
 
 		/// <summary>
 		/// return "Potato" if number is odd
-		/// return "Carrot" if number is even
+		/// return "Carrot" if number is exactly 8
 		/// otherwise return null
 		/// </summary>
 		public static string OddPotatoEightCarrot(int number)
